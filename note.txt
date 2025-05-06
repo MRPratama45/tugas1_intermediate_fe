@@ -1,0 +1,56 @@
+1. intall (sudah install node) => saran pakai vite
+    - npm install -g create-react-app
+    - create-react-app nama-project
+    - npm start (run)
+
+2. inisiasi/setup react 
+    > pahami struktur folder        
+        ----- DEFINISI STRUKTUR FOLDER MENURUT DEEPSEEK -----
+        my-react-app/
+        ├── node_modules/       # Berisi semua dependensi yang di-install
+        ├── public/             # File-file statis yang tidak diproses Webpack
+        │   ├── index.html      # Template HTML utama
+        │   ├── favicon.ico     # Ikon aplikasi
+        │   └── manifest.json   # Metadata untuk PWA
+        ├── src/                # Folder utama untuk kode sumber
+        │   ├── components/     # Komponen-komponen reusable
+        │   ├── pages/          # Halaman-halaman (jika menggunakan routing)
+        │   ├── assets/         # Gambar, font, styles global
+        │   ├── styles/         # File CSS/SASS (jika terpisah)
+        │   ├── utils/          # Fungsi utilitas (helpers, constants)
+        │   ├── hooks/          # Custom Hooks
+        │   ├── context/        # Context API (state management sederhana)
+        │   ├── services/       # API calls, axios config
+        │   ├── App.js          # Komponen utama App
+        │   ├── App.css         # Styles untuk App
+        │   ├── index.js        # Entry point aplikasi
+        │   └── index.css       # Styles global
+        ├── .gitignore          # File yang diabaikan Git
+        ├── package.json        # Dependencies & scripts
+        └── README.md           # Dokumentasi proyek
+
+        Penjelasan Lebih Detail:
+        > node_modules/
+            - Berisi semua dependensi yang diinstall via npm atau yarn.
+            - Tidak perlu dimodifikasi manual.
+
+        > public/
+            - Berisi file statis seperti index.html (template utama React).
+            - File seperti manifest.json (untuk PWA) dan robots.txt (SEO) juga bisa disimpan di sini.
+
+        > src/ (Folder Utama Pengembangan)
+            - components/: Komponen reusable (contoh: Button.jsx, Navbar.jsx).
+            - pages/: Halaman yang di-load via React Router (contoh: Home.jsx, About.jsx).
+            - assets/: Gambar, font, atau file statis lainnya.
+            - styles/: File CSS/SASS modular (contoh: global.css, variables.scss).
+            - utils/: Fungsi helper (contoh: formatDate.js, api.js).
+            - hooks/: Custom Hooks (contoh: useFetch.js, useLocalStorage.js).
+            - context/: State management dengan Context API (contoh: AuthContext.js).
+            - services/: Konfigurasi API (Axios, Firebase, dll).
+            - App.js: Komponen root yang merender seluruh aplikasi.
+            - index.js: File entry point yang me-render React ke DOM.
+
+        > File Konfigurasi
+            - package.json: Daftar dependensi & scripts (start, build, test).
+            - .gitignore: File/folder yang tidak ingin di-track Git.
+        ----- DEFINISI STRUKTUR FOLDER MENURUT DEEPSEEK -----
