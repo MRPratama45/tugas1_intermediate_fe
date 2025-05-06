@@ -66,7 +66,9 @@ const LayoutRegistrasi = () => {
                       </a>
                     </span>
                   </p>
-                  <p className="ml-10">Lupa kata sandi?</p>
+                  <p className="ml-10">
+                    <a href="#">Lupa kata sandi?</a>
+                  </p>
                 </div>
                 <br />
                 <div className="submit text-center">
