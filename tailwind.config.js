@@ -2,10 +2,11 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   theme: {
     screens: {
-      sm: "640px",
+      s: "375px",
+      sm: "425px",
       md: "768px",
       lg: "1024px",
-      xl: "1280px",
+      xl: "1440px",
       "2xl": "1536px",
     },
     extend: {
@@ -13,6 +14,9 @@ module.exports = {
       screens: {
         tall: { raw: "(min-height: 800px)" },
         mobile: { max: "639px" },
+      },
+      fontFamily: {
+        customFont: ["zz", "lato"],
       },
     },
   },

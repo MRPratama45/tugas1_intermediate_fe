@@ -36,7 +36,11 @@ const LayoutDashboard = () => {
   return (
     <>
       {/* navbar */}
-      <div className="navbar text-center bg-black text-white p-2 flex w-full ps-20">
+      <div
+        className="navbar fixed text-center bg-black text-white p-2 flex w-full ps-20  
+          s:z-10 
+      "
+      >
         <div className="icon flex">
           <img
             src={vectorChill}
@@ -110,9 +114,21 @@ const LayoutDashboard = () => {
       </div>
       <img src={bgKonten} alt="img-bg" className="w-full" />
       {/* konten header */}
-      <div className="absolute top-96 left-24">
-        <div className="kontenHeader w-1/2 p-5 text-white">
-          <h1 className="text-7xl font-bold">Duty After School</h1>
+      <div
+        className="absolute top-96 left-24
+      lg:top-20 lg:left-16 
+       md:top-10 md:left-16 md:text-sm
+      "
+      >
+        <div className="kontenHeader w-1/2 p-5  text-white">
+          <h1
+            className="font-bold 
+          2xl:text-7xl
+          lg:text-4xl  
+          md:text-4xl "
+          >
+            Duty After School
+          </h1>
           <br />
           <p>
             Sebuah benda tak dikenal mengambil alih dunia. Dalam keputusasaan,
@@ -150,15 +166,41 @@ const LayoutDashboard = () => {
       {/* konten */}
       <div className="bg-black">
         {/* melanjutkan tonton */}
-        <div className="melanjutkan-tonton-film text-white w-fit ms-24">
+        <div
+          className="melanjutkan-tonton-film text-white w-fit
+          2xl:ms-24 
+          lg:ms-24
+          md:ms-24 
+          sm:ms-0 
+          s:ms-0 
+          "
+        >
           <h1 className="font-bold text-4xl">Melanjutkan Tonton Film</h1>
           <br />
-          <div className="flex relative gap-5 w-fit h-56 text-white">
-            <span className="absolute top-20">
+          <div
+            className="flex relative gap-5 w-fit h-56 text-white 
+          2xl:overflow-visible
+          xl:overflow-hidden
+          lg:overflow-hidden
+          md:overflow-hidden 
+          sm:overflow-hidden
+          s:overflow-hidden
+          "
+          >
+            <span
+              className="absolute top-20
+            "
+            >
               <img
                 src={vectorLeft}
                 alt="arah-kiri"
-                className="relative rounded-xl w-10 h-10 top-1/2 -left-5 p-1 border-2 bg-black"
+                className="relative rounded-xl w-10 h-10 -left-5 p-1 border-2 bg-black
+                sm:invisible 
+                md:invisible 
+                lg:visible lg:left-5
+                xl:visible xl:left-5
+                2xl:visible               
+                 "
               />
             </span>
             <img src={mtf1} alt="img-1" />
@@ -169,24 +211,45 @@ const LayoutDashboard = () => {
               <img
                 src={vectorRight}
                 alt="arah-kanan"
-                className="flex relative rounded-xl w-10 h-10 top-1/2 left-6 p-1 border-2 border-white bg-black"
+                className="flex relative rounded-xl w-10 h-10 top-1/2  p-1 border-2 border-white bg-black 
+                sm:invisible 
+                md:invisible 
+                lg:visible lg:-left-1
+                xl:visible 
+                2xl:visible 2xl:left-6 
+                "
               />
             </span>
           </div>
         </div>
         <br />
         {/* top rating */}
-        <div className="top-rating text-white w-fit ms-24 ">
+        <div className="top-rating ms-24 text-white w-fit">
           <h1 className="font-bold text-4xl">
             Top rating Film dan Series Hari ini
           </h1>
           <br />
-          <div className="flex relative gap-24 w-fit h-96 text-white">
+          <div
+            className="flex relative gap-24 w-fit h-96 text-white
+                2xl:overflow-visible
+                xl:overflow-hidden
+                lg:overflow-hidden
+                md:overflow-hidden 
+                sm:overflow-hidden
+                s:overflow-hidden
+          "
+          >
             <span className="absolute top-40">
               <img
                 src={vectorLeft}
                 alt="arah-kiri"
-                className="relative rounded-xl w-10 h-10 top-1/2 -left-5 p-1 border-2 bg-black"
+                className="relative rounded-xl w-10 h-10 top-1/2 -left-5 p-1 border-2 bg-black
+                sm:invisible 
+                md:invisible 
+                lg:visible lg:left-5
+                xl:visible xl:left-5
+                2xl:visible     
+                "
               />
             </span>
             <img src={trs1} alt="img-1" />
@@ -198,7 +261,14 @@ const LayoutDashboard = () => {
               <img
                 src={vectorRight}
                 alt="arah-kanan"
-                className="flex relative rounded-xl w-10 h-10 top-1/2 left-6 p-1 border-2 border-white bg-black"
+                className="flex relative rounded-xl w-10 h-10 top-1/2 left-6 p-1 border-2 border-white bg-black
+                sm:invisible 
+                md:invisible 
+                lg:visible lg:-left-5
+                xl:visible 
+                2xl:visible 2xl:left-6
+
+                "
               />
             </span>
           </div>
@@ -208,13 +278,26 @@ const LayoutDashboard = () => {
         <div className="film-trending text-white w-fit ms-24 ">
           <h1 className="font-bold text-4xl">Film Trending</h1>
           <br />
-          <div className="flex relative gap-x-14 w-fit h-96 text-white">
+          <div
+            className="flex relative gap-x-14 w-fit h-96 text-white 
+          2xl:gap-x-14 
+          lg:gap-x-10
+          md:gap-x-5 
+          sm:gap-x-0 
+          s:gap-x-0
+          "
+          >
             <div className="gorupListFilmTrending flex relative">
               <span className="absolute top-40">
                 <img
                   src={vectorLeft}
                   alt="arah-kiri"
-                  className="relative rounded-xl w-10 h-10 top-1/2 -left-5 p-1 border-2 bg-black"
+                  className="relative rounded-xl w-10 h-10 top-1/2 -left-5 p-1 border-2 bg-black                  
+                  sm:invisible 
+                md:invisible 
+                lg:visible lg:left-5
+                xl:visible xl:left-5
+                2xl:visible     "
                 />
               </span>
               <img src={fm1} alt="img-1" />
@@ -267,13 +350,27 @@ const LayoutDashboard = () => {
         {/* rilis baru */}
         <div className="rilis-baru text-white w-fit ms-24">
           <h1 className="font-bold text-4xl">Rilis Baru</h1>
-          <div className="flex relative gap-x-24 w-fit h-96 text-white">
+          <div
+            className="flex relative w-fit h-96 text-white
+          2xl:gap-x-24 
+          lg:gap-x-10
+          md:gap-x-5 
+          sm:gap-x-0 
+          s:gap-x-0
+          "
+          >
             <div className="gorupListRilisBaru flex relative">
               <span className="absolute top-40">
                 <img
                   src={vectorLeft}
                   alt="arah-kiri"
-                  className="relative rounded-xl w-10 h-10 top-1/2 -left-5 p-1 border-2 bg-black"
+                  className="relative rounded-xl w-10 h-10 top-1/2 -left-5 p-1 border-2 bg-black
+                  sm:invisible 
+                md:invisible 
+                lg:visible lg:left-5
+                xl:visible xl:left-5
+                2xl:visible     
+                  "
                 />
               </span>
               <img src={rb1} alt="img-1" />
@@ -301,33 +398,62 @@ const LayoutDashboard = () => {
                 Episode Baru
               </p>
             </div>
-            <img src={rb5} alt="img-5" />
-            <span className="flex absolute top-40 justify-end w-full">
-              <img
-                src={vectorRight}
-                alt="arah-kanan"
-                className="flex relative rounded-xl w-10 h-10 top-1/2 left-6 p-1 border-2 border-white bg-black"
-              />
-            </span>
+            <div className="gorupListRilisbaru flex relative">
+              <img src={rb5} alt="img-5" />
+              <span className="flex absolute top-40 justify-end w-full">
+                <img
+                  src={vectorRight}
+                  alt="arah-kanan"
+                  className="flex relative rounded-xl border-2 border-white bg-black w-10 h-10 p-1 left-5
+                  sm:invisible 
+                md:invisible 
+                lg:visible lg:-left-1
+                xl:visible 
+                2xl:visible 2xl:left-6
+                  "
+                />
+              </span>
+            </div>
           </div>
         </div>
       </div>
       {/* footer */}
-      <footer className="bg-black text-white p-16 ">
-        <div className="flex gap-48">
-          <div className="ms-10">
-            <div className="flex flex-colw-1/6 h-fit">
+      <footer
+        className="bg-black text-white p-16 
+          2xl:p-16 
+          lg:p-16
+          md:p-0 
+          sm:p-0
+          s:p-0
+      "
+      >
+        <div
+          className="flex
+            2xl:gap-1 2xl:w-11/12 2xl:justify-around 
+            lg:justify-around 
+          "
+        >
+          <div className="ms-1">
+            <div className="flex gap-3 h-fit">
               <img src={vectorChill} alt="icon-Chill" className="w-10 " />
               <h2 className="font-bold text-4xl relative top-0">CHILL</h2>
             </div>
             <br />
-            <p className="text-xl">@2023 Chill All Rights Reserved.</p>
+            <p
+              className="lg:text-xl 
+                md:text-xs md:-mt-5 
+                sm:text-xs sm:-mt-5 
+                s:text-xs s:-mt-5 
+              "
+            >
+              @2023 Chill All Rights Reserved.
+            </p>
           </div>
-          <div className="">
+          <div className=" w-fit ">
             <h2 className="font-bold pb-3">Genre</h2>
             <div className="flex ">
               <div className="">
-                <div className="genre w-52 h-fit ">
+                <div className="genre w-24 h-fit">
                   <p>Aksi</p>
                   <p>Anak-anak</p>
                   <p>anime</p>
@@ -335,7 +461,7 @@ const LayoutDashboard = () => {
                 </div>
               </div>
               <div className="flex flex-col gap-10">
-                <div className="genre w-52 h-fit">
+                <div className="genre w-48 h-fit">
                   <p>Drama</p>
                   <p>Fantasi ilmiah & fantasi</p>
                   <p>Kejahatan</p>
@@ -343,7 +469,7 @@ const LayoutDashboard = () => {
                 </div>
               </div>
               <div className="flex flex-col gap-10">
-                <div className="genre w-52 h-fit ">
+                <div className="genre w-24 h-fit ">
                   <p>Komedi</p>
                   <p>Petualangan</p>
                   <p>Perang</p>
@@ -351,7 +477,7 @@ const LayoutDashboard = () => {
                 </div>
               </div>
               <div className="flex flex-col gap-10">
-                <div className="genre w-52 h-fit ">
+                <div className="genre w-24 h-fit ">
                   <p>Sains & Alam</p>
                   <p>Thriller</p>
                 </div>
@@ -359,7 +485,7 @@ const LayoutDashboard = () => {
             </div>
           </div>
           <div className="">
-            <p className="font-bold pb-3">Bantuan</p>
+            <p className="font-bold">Bantuan</p>
             <p>FAQ</p>
             <p>Kontak Kami</p>
             <p>Privasi</p>

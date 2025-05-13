@@ -7,10 +7,18 @@ const LayoutRegistrasi = () => {
   return (
     <>
       <div className="">
-        <img src={myBackground} alt="bg-login" />
-        <div className="countainer absolute top-0 left-1/3">
-          <div className="konte relative top-40 left-20 bg-black p-5 rounded-2xl text-white">
-            <div className="header-login font-bold px-32 max-w-fit">
+        <img className="w-screen" src={myBackground} alt="bg-login" />
+        <div
+          className="w-screen absolute flex justify-center 
+        2xl:top-1/4 2xl:-left-5
+        xl:top-0 xl:left-0 
+        lg:top-0 lg:left-0  
+        md:top-0 md:left-0  
+        sm:top-0 sm:left-0  
+        s:top-0  s:left-0"
+        >
+          <div className="rounded-2xl p-5 bg-black  text-white">
+            <div className="header-login font-bold px-32">
               <div className="inline-flex">
                 <img className="w-10" src={vectorChill} alt="icon-Chill" />
                 <p className="text-3xl">CHILL</p>
