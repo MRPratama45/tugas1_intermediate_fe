@@ -6,6 +6,7 @@ import vectorSpeaker from "../assets/vector/Vector-speaker.png";
 import detailAkun from "../assets/vector/Vector-bottom.png";
 import vectorLeft from "../assets/vector/Vector-left.png";
 import vectorRight from "../assets/vector/Vector-right.png";
+import vectorBottom from "../assets/vector/Vector-bottom.png";
 import mtf1 from "../assets/poster/melanjutkanNontonFilm/Don'tLookUp.png";
 import mtf2 from "../assets/poster/melanjutkanNontonFilm/allOfUsDead.png";
 import mtf3 from "../assets/poster/melanjutkanNontonFilm/batman.png";
@@ -418,79 +419,91 @@ const LayoutDashboard = () => {
         </div>
       </div>
       {/* footer */}
-      <footer
-        className="bg-black text-white p-16 
-          2xl:p-16 
-          lg:p-16
-          md:p-0 
-          sm:p-0
-          s:p-0
-      "
-      >
-        <div
-          className="flex
-            2xl:gap-1 2xl:w-11/12 2xl:justify-around 
-            lg:justify-around 
-          "
-        >
-          <div className="ms-1">
-            <div className="flex gap-3 h-fit">
-              <img src={vectorChill} alt="icon-Chill" className="w-10 " />
-              <h2 className="font-bold text-4xl relative top-0">CHILL</h2>
+      <footer>
+        <div className="bg-black text-white p-10">
+          <div className="ms-14 border-4 border-white">
+            <div className="lg:grid lg:grid-cols-4 lg:justify-center lg:items-center md:inline-block">
+              <div className="block w-full">
+                <div className="groupLogo inline-flex items-center mb-5">
+                  <img src={vectorChill} alt="logo" className="w-20" />
+                  <h2 className="font-bold text-7xl">CHILL</h2>
+                </div>
+                <p className="block">@2023 Chill All Rights Reserved</p>
+              </div>
+              <div className="col-span-2">
+                <div className="genre grid grid-cols-4 w-full md:h-10 lg:h-auto border-4 border-yellow-400">
+                  <div className="">
+                    <div className="md:w-full  md:border-4 md:border-red-500 md:flex md:justify-between">
+                      <p className="font-bold">Genre</p>
+                      <span>
+                        <img
+                          src={vectorBottom}
+                          alt="vector-bottom"
+                          className="lg:invisible"
+                        />
+                      </span>
+                    </div>
+                  </div>
+                  <div className="listGenre w-fit">
+                    <ul className="md:invisible lg:visible">
+                      <li>Aksi</li>
+                      <li>Anak-Anak</li>
+                      <li>Anime</li>
+                      <li>Britania</li>
+                    </ul>
+                  </div>
+
+                  <div className="listGenre w-fit">
+                    <ul className="md:invisible lg:visible">
+                      <li className="text-black">...</li>
+                      <li>Drama</li>
+                      <li>Fantasi Ilmiah & Fantasi</li>
+                      <li>Kejahatan</li>
+                      <li>KDrama</li>
+                    </ul>
+                  </div>
+                  <div className="listGenre">
+                    <ul className="md:invisible lg:visible">
+                      <li className="text-black">...</li>
+                      <li>Komedi</li>
+                      <li>Petualangan</li>
+                      <li>Perang</li>
+                      <li>Romantis</li>
+                    </ul>
+                  </div>
+                  <div className="listGenre">
+                    <ul className="md:invisible lg:visible">
+                      <li className="text-black">...</li>
+                      <li>Sains & Alam</li>
+                      <li>Thriller</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="colGenre md:h-10 lg:h-auto">
+                <div className="md:flex md:justify-between">
+                  <p className="font-bold">Bantuan</p>
+                  <span>
+                    <img
+                      src={vectorBottom}
+                      alt="vector-bottom"
+                      className="md:relative md:top-3 lg:invisible"
+                    />
+                  </span>
+                </div>
+                <div className="listGenre w-fit">
+                  <ul className="md:invisible lg:visible">
+                    <li>FAQ</li>
+                    <li>Kontak Kami</li>
+                    <li>Privasi</li>
+                    <li>Syarat & Ketentuan</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <br />
-            <p
-              className="lg:text-xl 
-                md:text-xs md:-mt-5 
-                sm:text-xs sm:-mt-5 
-                s:text-xs s:-mt-5 
-              "
-            >
-              @2023 Chill All Rights Reserved.
-            </p>
           </div>
-          <div className=" w-fit ">
-            <h2 className="font-bold pb-3">Genre</h2>
-            <div className="flex ">
-              <div className="">
-                <div className="genre w-24 h-fit">
-                  <p>Aksi</p>
-                  <p>Anak-anak</p>
-                  <p>anime</p>
-                  <p>Britania</p>
-                </div>
-              </div>
-              <div className="flex flex-col gap-10">
-                <div className="genre w-48 h-fit">
-                  <p>Drama</p>
-                  <p>Fantasi ilmiah & fantasi</p>
-                  <p>Kejahatan</p>
-                  <p>KDrama</p>
-                </div>
-              </div>
-              <div className="flex flex-col gap-10">
-                <div className="genre w-24 h-fit ">
-                  <p>Komedi</p>
-                  <p>Petualangan</p>
-                  <p>Perang</p>
-                  <p>Romantis</p>
-                </div>
-              </div>
-              <div className="flex flex-col gap-10">
-                <div className="genre w-24 h-fit ">
-                  <p>Sains & Alam</p>
-                  <p>Thriller</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="">
-            <p className="font-bold">Bantuan</p>
-            <p>FAQ</p>
-            <p>Kontak Kami</p>
-            <p>Privasi</p>
-            <p>Syarat & Ketentuan</p>
-          </div>
+          <div className=""></div>
+          <div className=""></div>
         </div>
       </footer>
     </>
