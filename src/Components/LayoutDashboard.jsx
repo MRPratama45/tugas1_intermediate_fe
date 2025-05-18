@@ -116,9 +116,9 @@ const LayoutDashboard = () => {
       <img src={bgKonten} alt="img-bg" className="w-full" />
       {/* konten header */}
       <div
-        className="absolute top-96 left-24
-      lg:top-20 lg:left-16 
-       md:top-10 md:left-16 md:text-sm
+        className="absolute
+          lg:top-96 lg:left-20 
+          md:top-10 md:left-16 s:text-sm lg:text-lg
       "
       >
         <div className="kontenHeader w-1/2 p-5  text-white">
@@ -198,9 +198,7 @@ const LayoutDashboard = () => {
                 className="relative rounded-xl w-10 h-10 -left-5 p-1 border-2 bg-black
                 sm:invisible 
                 md:invisible 
-                lg:visible lg:left-5
-                xl:visible xl:left-5
-                2xl:visible               
+                lg:visible lg:-left-5      
                  "
               />
             </span>
@@ -247,9 +245,7 @@ const LayoutDashboard = () => {
                 className="relative rounded-xl w-10 h-10 top-1/2 -left-5 p-1 border-2 bg-black
                 sm:invisible 
                 md:invisible 
-                lg:visible lg:left-5
-                xl:visible xl:left-5
-                2xl:visible     
+               lg:visible lg:-left-5         
                 "
               />
             </span>
@@ -295,10 +291,8 @@ const LayoutDashboard = () => {
                   alt="arah-kiri"
                   className="relative rounded-xl w-10 h-10 top-1/2 -left-5 p-1 border-2 bg-black                  
                   sm:invisible 
-                md:invisible 
-                lg:visible lg:left-5
-                xl:visible xl:left-5
-                2xl:visible     "
+                  md:invisible 
+                  lg:visible lg:-left-5     "
                 />
               </span>
               <img src={fm1} alt="img-1" />
@@ -353,11 +347,11 @@ const LayoutDashboard = () => {
           <h1 className="font-bold text-4xl">Rilis Baru</h1>
           <div
             className="flex relative w-fit h-96 text-white
-          2xl:gap-x-24 
-          lg:gap-x-10
-          md:gap-x-5 
-          sm:gap-x-0 
-          s:gap-x-0
+            2xl:gap-x-24 
+            lg:gap-x-10
+            md:gap-x-5 
+            sm:gap-x-0 
+            s:gap-x-0
           "
           >
             <div className="gorupListRilisBaru flex relative">
@@ -367,11 +361,7 @@ const LayoutDashboard = () => {
                   alt="arah-kiri"
                   className="relative rounded-xl w-10 h-10 top-1/2 -left-5 p-1 border-2 bg-black
                   sm:invisible 
-                md:invisible 
-                lg:visible lg:left-5
-                xl:visible xl:left-5
-                2xl:visible     
-                  "
+                  lg:visible lg:-left-5"
                 />
               </span>
               <img src={rb1} alt="img-1" />
@@ -420,8 +410,8 @@ const LayoutDashboard = () => {
       </div>
       {/* footer */}
       <footer>
-        <div className="bg-black text-white p-10">
-          <div className="ms-14 border-4 border-white">
+        <div className="bg-black text-white p-24">
+          <div className="">
             <div className="lg:grid lg:grid-cols-4 lg:justify-center lg:items-center md:inline-block">
               <div className="block w-full">
                 <div className="groupLogo inline-flex items-center mb-5">
@@ -430,32 +420,33 @@ const LayoutDashboard = () => {
                 </div>
                 <p className="block">@2023 Chill All Rights Reserved</p>
               </div>
-              <div className="col-span-2">
-                <div className="genre grid grid-cols-4 w-full md:h-10 lg:h-auto border-4 border-yellow-400">
+              <div className="col-span-2 s:h-10 lg:h-auto">
+                <div className="s:flex s:justify-between">
+                  <p className="font-bold">Genre</p>
+                  <span>
+                    <button>
+                      <img
+                        src={vectorBottom}
+                        alt="vector-bottom"
+                        className=" s:relative s:top-3 lg:invisible"
+                      />
+                    </button>
+                  </span>
+                </div>
+                <div className="genre grid grid-cols-4 w-full lg:h-auto ">
                   <div className="">
-                    <div className="md:w-full  md:border-4 md:border-red-500 md:flex md:justify-between">
-                      <p className="font-bold">Genre</p>
-                      <span>
-                        <img
-                          src={vectorBottom}
-                          alt="vector-bottom"
-                          className="lg:invisible"
-                        />
-                      </span>
+                    <div className="listGenre w-fit">
+                      <ul className="s:invisible lg:visible">
+                        <li>Aksi</li>
+                        <li>Anak-Anak</li>
+                        <li>Anime</li>
+                        <li>Britania</li>
+                      </ul>
                     </div>
-                  </div>
-                  <div className="listGenre w-fit">
-                    <ul className="md:invisible lg:visible">
-                      <li>Aksi</li>
-                      <li>Anak-Anak</li>
-                      <li>Anime</li>
-                      <li>Britania</li>
-                    </ul>
                   </div>
 
                   <div className="listGenre w-fit">
-                    <ul className="md:invisible lg:visible">
-                      <li className="text-black">...</li>
+                    <ul className="s:invisible lg:visible">
                       <li>Drama</li>
                       <li>Fantasi Ilmiah & Fantasi</li>
                       <li>Kejahatan</li>
@@ -463,8 +454,7 @@ const LayoutDashboard = () => {
                     </ul>
                   </div>
                   <div className="listGenre">
-                    <ul className="md:invisible lg:visible">
-                      <li className="text-black">...</li>
+                    <ul className="s:invisible lg:visible">
                       <li>Komedi</li>
                       <li>Petualangan</li>
                       <li>Perang</li>
@@ -472,16 +462,15 @@ const LayoutDashboard = () => {
                     </ul>
                   </div>
                   <div className="listGenre">
-                    <ul className="md:invisible lg:visible">
-                      <li className="text-black">...</li>
+                    <ul className="s:invisible lg:visible">
                       <li>Sains & Alam</li>
                       <li>Thriller</li>
                     </ul>
                   </div>
                 </div>
               </div>
-              <div className="colGenre md:h-10 lg:h-auto">
-                <div className="md:flex md:justify-between">
+              <div className="colGenre s:h-10 lg:h-auto">
+                <div className="s:flex s:justify-between">
                   <p className="font-bold">Bantuan</p>
                   <span>
                     <img
@@ -492,7 +481,7 @@ const LayoutDashboard = () => {
                   </span>
                 </div>
                 <div className="listGenre w-fit">
-                  <ul className="md:invisible lg:visible">
+                  <ul className="s:invisible lg:visible">
                     <li>FAQ</li>
                     <li>Kontak Kami</li>
                     <li>Privasi</li>
@@ -502,8 +491,6 @@ const LayoutDashboard = () => {
               </div>
             </div>
           </div>
-          <div className=""></div>
-          <div className=""></div>
         </div>
       </footer>
     </>
